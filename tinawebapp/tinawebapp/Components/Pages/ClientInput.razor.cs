@@ -7,6 +7,10 @@ namespace tinawebapp.Components.Pages
     {
         private TaskModel task = new TaskModel { StartDate = DateTime.Today };
 
+
+        [Inject]
+        private NavigationManager NavigationManager { get; set; }
+
         public class TaskModel
         {
             public string EstimatedTime { get; set; }
@@ -14,7 +18,12 @@ namespace tinawebapp.Components.Pages
             public DateTime DueDate { get; set; }
             public string Type { get; set; }
             public string Priority { get; set; }
-            public string Description { get; set; }
+            public string Description { get; set; } 
+        }
+
+        private void Btn()
+        {
+            NavigationManager.NavigateTo("/client", forceLoad:true);
         }
     }
 }

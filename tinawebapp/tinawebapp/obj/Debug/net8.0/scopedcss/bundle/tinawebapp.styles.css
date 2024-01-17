@@ -222,9 +222,70 @@ main[b-gko1dv454l] {
     }
 }
 /* _content/tinawebapp/Components/Pages/ClientInput.razor.rz.scp.css */
-namespace tinawebapp.Components.Pages[b-4nn6m64ww4]
-{
-    public class ClientInput
-    {
-    }
+/* Add this CSS to your site's stylesheet */
+
+/* Styles for the overall page background */
+body[b-4nn6m64ww4] {
+    background-image: url('/Components/Images/office.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+/* General styles for the form layout */
+.row[b-4nn6m64ww4] {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.col-md-6[b-4nn6m64ww4] {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+/* Styles for form labels */
+label[b-4nn6m64ww4] {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styles for input fields and textarea */
+input[type="text"][b-4nn6m64ww4],
+input[type="date"][b-4nn6m64ww4],
+select[b-4nn6m64ww4],
+textarea[b-4nn6m64ww4] {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styles for the file input */
+input[type="file"][b-4nn6m64ww4] {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Styles for the submit button */
+button[type="submit"][b-4nn6m64ww4] {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    button[type="submit"]:hover[b-4nn6m64ww4] {
+        background-color: #0056b3;
+    }
+
+/* Additional styling can be added as needed */

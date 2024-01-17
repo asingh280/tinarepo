@@ -1,3 +1,49 @@
-﻿<h3>ClientInput</h3>
+﻿@page "/client"
+@using System
+@using Microsoft.AspNetCore.Components.Forms
 
+<body>
+	<EditForm Model="@task">
+   
+    <div class="row">
+        <div class="col-md-6">
+            <label for="estimatedTime">Estimated Task Time:</label>
+            <InputText id="estimatedTime" @bind-Value="@task.EstimatedTime" />
 
+            <label for="startDate">Start Date:</label>
+            <InputDate id="startDate" @bind-Value="@task.StartDate" />
+
+            <label for="dueDate">Due Date:</label>
+            <InputDate id="dueDate" @bind-Value="@task.DueDate" />
+
+            <label for="type">Type:</label>
+            <InputText id="type" placeholder="Type" @bind-Value="@task.Type" />
+
+            <label for="priority">Priority Level:</label>
+            <InputSelect id="priority" @bind-Value="@task.Priority">
+                <option value="">Select priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </InputSelect>
+        </div>
+
+        <div class="col-md-6">
+            <label for="description">Description:</label>
+            <InputTextArea id="description" @bind-Value="@task.Description" />
+
+            <label for="fileUpload">File Attachments:</label>
+            <InputFile id="fileUpload" OnChange="@HandleFileUpload" />
+        </div>
+    </div>
+
+    <button type="submit" @onclick="Btn">Submit</button>
+    
+</EditForm></body>
+
+@code {
+    private void HandleFileUpload(InputFileChangeEventArgs e)
+    {
+        // Handle file upload logic
+    }
+}
