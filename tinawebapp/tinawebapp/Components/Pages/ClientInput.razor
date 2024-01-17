@@ -34,19 +34,50 @@
             <label for="description">Description:</label>
             <InputTextArea id="description" @bind-Value="@task.Description" />
 
-            <label for="fileUpload">File Attachments:</label>
-            <InputFile id="fileUpload" OnChange="@HandleFileUpload" />
-			</div> 
-            <button type="button" class="btn" @onclick="Btn">Submit</button>
-    </div>
+                <label for="fileUpload">File Attachments:</label>
+                <InputFile id="fileUpload" multiple OnChange="@HandleFileUpload" />
 
-  
+                <!-- List to display selected files -->
+                <ul>
+                    @if (selectedFiles != null)
+                    {
+                        foreach (var file in selectedFiles)
+                        {
+                            <li>@file.Name</li>
+                        }
+                    }
+                </ul>
+            </div>
+                <button type="button" class="btn" @onclick="Btn">Submit</button>
+            </div>
+    </EditForm>
+</body>
     
-</EditForm></body>
 
 @code {
     private void HandleFileUpload(InputFileChangeEventArgs e)
     {
-        // Handle file upload logic
+        const long maxFileSize = 2L * 1024 * 1024 * 1024; // 2 GB in bytes
+        long totalSize = 0;
+
+        foreach (var file in e.GetMultipleFiles())
+        {
+            totalSize += file.Size;
+            if (totalSize > maxFileSize)
+            {
+                // Handle the case where total file size exceeds 2 GB
+                // You can show an error message to the user
+                return;
+            }
+
+            selectedFiles.Clear(); // Clear the current file list
+            selectedFiles.AddRange(e.GetMultipleFiles());
+
+            // Process each file here
+        }
+
+        // Continue with the upload logic if the size is within the limit
     }
+
+    private List<IBrowserFile> selectedFiles = new List<IBrowserFile>();
 }
