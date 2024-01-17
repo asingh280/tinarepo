@@ -2,47 +2,103 @@ body[b-4nn6m64ww4] {
     background-image: url('/Images/office.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #f4f4f4;
     background-attachment: fixed;
 }
 
 .row[b-4nn6m64ww4] {
-    margin: 0 auto;
-    max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 750px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    height:100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.row:hover[b-4nn6m64ww4] {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .col-md-6[b-4nn6m64ww4] {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 label[b-4nn6m64ww4] {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    color: #333;
 }
 
 input[b-4nn6m64ww4], select[b-4nn6m64ww4], textarea[b-4nn6m64ww4] {
+    display: block;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: .5rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
 
-button[b-4nn6m64ww4] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-    button:hover[b-4nn6m64ww4] {
-        background-color: #45a049;
+    input[type='file'][b-4nn6m64ww4] {
+        border: none;
     }
+
+    input:focus[b-4nn6m64ww4], select:focus[b-4nn6m64ww4], textarea:focus[b-4nn6m64ww4] {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    input:hover[b-4nn6m64ww4], select:hover[b-4nn6m64ww4], textarea:hover[b-4nn6m64ww4],
+    input:focus[b-4nn6m64ww4], select:focus[b-4nn6m64ww4], textarea:focus[b-4nn6m64ww4] {
+        border-color: #007bff;
+        background: #fff;
+    }
+
+button.btn[b-4nn6m64ww4] {
+    width: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left:0.7rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button.btn:hover[b-4nn6m64ww4] {
+        background-color: #0056b3;
+    }
+
+@media only screen and (max-width: 767px) {
+    .col-md-6[b-4nn6m64ww4] {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .row[b-4nn6m64ww4] {
+        padding: 20px 15px;
+    }
+}
+
+/* Add a hover effect to the entire row for interactive feedback */
+.row:hover[b-4nn6m64ww4] {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Make the form elements transition smoothly */
+input[b-4nn6m64ww4], select[b-4nn6m64ww4], textarea[b-4nn6m64ww4], button.btn[b-4nn6m64ww4] {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Style the placeholder text */
+[b-4nn6m64ww4]::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
