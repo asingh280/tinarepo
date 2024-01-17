@@ -7,17 +7,19 @@
    
     <div class="row">
         <div class="col-md-6">
-            <label for="estimatedTime">Estimated Task Time:</label>
-            <InputText id="estimatedTime" @bind-Value="@task.EstimatedTime" />
+
+            <label for="type">Type of Request:</label>
+            <InputSelect id="type" @bind-Value="@task.Type">
+                <option value="" enabled>Select a type</option>
+                <option value="Option1">Request For Information</option>
+                <option value="Option2">Document Review</option>
+            </InputSelect>
 
             <label for="startDate">Start Date:</label>
             <InputDate id="startDate" @bind-Value="@task.StartDate" />
 
             <label for="dueDate">Due Date:</label>
             <InputDate id="dueDate" @bind-Value="@task.DueDate" />
-
-            <label for="type">Type:</label>
-            <InputText id="type" placeholder="Type" @bind-Value="@task.Type" />
 
             <label for="priority">Priority Level:</label>
             <InputSelect id="priority" @bind-Value="@task.Priority">
