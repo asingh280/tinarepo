@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wlttWgskihxrJtSIbU6tUNutGFI+1dK6JQVTIoL7HEI=",
+  "Hash": "VLBzlCslyA/JCCNt1kd8r5gKAs/lDErEIvqq7wAbGC4=",
   "Source": "tinawebapp",
   "BasePath": "_content/tinawebapp",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\Images\\office.jpg",
+      "SourceId": "tinawebapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\",
+      "BasePath": "_content/tinawebapp",
+      "RelativePath": "Images/office.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\office.jpg"
     }
   ]
 }

@@ -15,7 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\Images\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\office.jpg" />
   </ItemGroup>
 
 </Project>

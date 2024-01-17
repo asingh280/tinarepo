@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\tinawebapp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\Images\\office.jpg",
+      "PackagePath": "staticwebassets\\Images\\office.jpg"
+    },
+    {
       "Id": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },

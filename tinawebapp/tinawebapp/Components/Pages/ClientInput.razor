@@ -1,7 +1,7 @@
 ﻿@page "/client"
 @using System
 @using Microsoft.AspNetCore.Components.Forms
-
+<PageTitle>Client Input</PageTitle>
 <body>
 	<EditForm Model="@task">
    
@@ -34,10 +34,11 @@
 
             <label for="fileUpload">File Attachments:</label>
             <InputFile id="fileUpload" OnChange="@HandleFileUpload" />
-        </div>
+			</div> 
+            <button type="button" class="btn" @onclick="Btn">Submit</button>
     </div>
 
-    <button type="submit" @onclick="Btn">Submit</button>
+  
     
 </EditForm></body>
 

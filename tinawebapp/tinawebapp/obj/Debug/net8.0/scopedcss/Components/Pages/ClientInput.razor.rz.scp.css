@@ -1,67 +1,48 @@
-/* Add this CSS to your site's stylesheet */
-
-/* Styles for the overall page background */
 body[b-4nn6m64ww4] {
-    background-image: url('/Components/Images/office.png'); 
+    background-image: url('/Images/office.jpg');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* General styles for the form layout */
 .row[b-4nn6m64ww4] {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form */
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height:100%;
 }
 
 .col-md-6[b-4nn6m64ww4] {
-    flex: 0 0 48%;
-    max-width: 48%;
+    margin-bottom: 20px;
 }
 
-/* Styles for form labels */
 label[b-4nn6m64ww4] {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Styles for input fields and textarea */
-input[type="text"][b-4nn6m64ww4],
-input[type="date"][b-4nn6m64ww4],
-select[b-4nn6m64ww4],
-textarea[b-4nn6m64ww4] {
+input[b-4nn6m64ww4], select[b-4nn6m64ww4], textarea[b-4nn6m64ww4] {
     width: 100%;
-    padding: 8px 12px;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
 }
 
-/* Styles for the file input */
-input[type="file"][b-4nn6m64ww4] {
-    display: block;
-    margin-bottom: 15px;
-}
-
-/* Styles for the submit button */
-button[type="submit"][b-4nn6m64ww4] {
-    padding: 10px 15px;
-    background-color: #007bff;
+button[b-4nn6m64ww4] {
+    background-color: #4CAF50;
     color: white;
+    padding: 15px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
-    button[type="submit"]:hover[b-4nn6m64ww4] {
-        background-color: #0056b3;
+    button:hover[b-4nn6m64ww4] {
+        background-color: #45a049;
     }
-
-/* Additional styling can be added as needed */
