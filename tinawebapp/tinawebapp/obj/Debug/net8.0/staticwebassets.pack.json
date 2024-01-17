@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\tinawebapp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\tinawebapp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.tinawebapp.props",
+      "PackagePath": "build\\tinawebapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.tinawebapp.props",
+      "PackagePath": "buildMultiTargeting\\tinawebapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.tinawebapp.props",
+      "PackagePath": "buildTransitive\\tinawebapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.tinawebapp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

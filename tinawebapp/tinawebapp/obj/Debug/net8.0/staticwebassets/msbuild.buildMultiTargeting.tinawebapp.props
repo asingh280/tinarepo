@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\tinawebapp.props" />
+</Project>
