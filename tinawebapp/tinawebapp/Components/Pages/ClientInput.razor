@@ -16,14 +16,16 @@
                 </InputSelect>
             </div>
 
-            <div class="form-group">
-                <label for="startDate">Start Date:</label>
-                <InputDate id="startDate" class="form-control" @bind-Value="requestModel.StartDate" />
-            </div>
+            <div class="date-fields">
+                <div class="form-group date-field">
+                    <label for="startDate">Start Date:</label>
+                    <InputDate id="startDate" class="form-control" @bind-Value="requestModel.StartDate" />
+                </div>
 
-            <div class="form-group">
-                <label for="dueDate">Due Date:</label>
-                <InputDate id="dueDate" class="form-control" @bind-Value="requestModel.DueDate" />
+                <div class="form-group date-field">
+                    <label for="dueDate">Due Date:</label>
+                    <InputDate id="dueDate" class="form-control" @bind-Value="requestModel.DueDate" />
+                </div>
             </div>
 
             <div class="form-group">
@@ -33,13 +35,12 @@
                     <option>Low</option>
                     <option>Med</option>
                     <option>High</option>
-                    <!-- Simplified: Static options can be added here -->
                 </InputSelect>
             </div>
 
             <div class="form-group">
-                <label for="priorityLevel">Package Number</label>
-                <InputSelect id="priorityLevel" class="form-control" @bind-Value="requestModel.PackageNumber"></InputSelect>
+                <label for="packageNumber">Package Number:</label>
+                <InputText id="packageNumber" class="form-control" @bind-Value="requestModel.PackageNumber" />
             </div>
 
             <div class="form-group">
@@ -56,9 +57,6 @@
     </body>
 
 
-
-
-
 </EditForm>
 
 @code {
@@ -70,8 +68,8 @@
         public DateTime StartDate { get; set; } = DateTime.Now;
         public DateTime? DueDate { get; set; }
         public string PriorityLevel { get; set; }
-        public string PackageNumber { get; set; }
         public string Description { get; set; }
+        public string PackageNumber { get; set; }
         public IBrowserFile FileAttachment { get; set; }
         public IEnumerable<IBrowserFile> FileAttachments { get; set; }
 
