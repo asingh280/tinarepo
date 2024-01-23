@@ -1,12 +1,11 @@
 ﻿@page "/client"
 
-<h3>Client Input</h3>
-
 <EditForm Model="@requestModel">
     <DataAnnotationsValidator />
     <ValidationSummary />
     <body>
-        <container>
+        <container class="container">
+            <h3>Client Input</h3>
             <div class="form-group">
                 <label for="typeOfRequest">Type of Request:</label>
                 <InputSelect id="typeOfRequest" class="form-control" @bind-Value="requestModel.TypeOfRequest">
@@ -50,9 +49,9 @@
 
             <div class="form-group">
                 <label for="fileAttachment">File Attachments:</label>
-                <InputFile id="fileAttachment" class="form-control" multiple @bind-Value="requestModel.FileAttachments" />
+                 <InputFile id="fileAttachment" class="form-control" multiple @bind-Value="requestModel.FileAttachments" />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit </button>
         </container>
     </body>
 
@@ -74,4 +73,4 @@
         public IEnumerable<IBrowserFile> FileAttachments { get; set; }
 
     }
-}
+   }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tinawebapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+531d6b3a5da6595f1160c1a96ff5631136e49024")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d0caed01d5276fcf50d1ae6c6b4d2aa7ad1007f")]
 [assembly: System.Reflection.AssemblyProductAttribute("tinawebapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tinawebapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
