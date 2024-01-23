@@ -1,83 +1,79 @@
 ﻿@page "/client"
-@using System
-@using Microsoft.AspNetCore.Components.Forms
-<PageTitle>Client Input</PageTitle>
-<body>
-	<EditForm Model="@task">
-   
-    <div class="row">
-        <div class="col-md-6">
 
-            <label for="type">Type of Request:</label>
-            <InputSelect id="type" @bind-Value="@task.Type">
-                <option value="" enabled>Select a type</option>
-                <option value="Option1">Request For Information</option>
-                <option value="Option2">Document Review</option>
-            </InputSelect>
+<h3>Client Input</h3>
 
-            <label for="startDate">Start Date:</label>
-            <InputDate id="startDate" @bind-Value="@task.StartDate" />
-
-            <label for="dueDate">Due Date:</label>
-            <InputDate id="dueDate" @bind-Value="@task.DueDate" />
-
-            <label for="priority">Priority Level:</label>
-            <InputSelect id="priority" @bind-Value="@task.Priority">
-                <option value="">Select priority</option>
-                <option value="Low">Low</option>
-                <option value="Medium">Medium</option>
-                <option value="High">High</option>
-            </InputSelect>
-        </div>
-
-        <div class="col-md-6">
-            <label for="description">Description:</label>
-            <InputTextArea id="description" @bind-Value="@task.Description" />
-
-                <label for="fileUpload">File Attachments:</label>
-                <InputFile id="fileUpload" multiple OnChange="@HandleFileUpload" />
-
-                <!-- List to display selected files -->
-                <ul>
-                    @if (selectedFiles != null)
-                    {
-                        foreach (var file in selectedFiles)
-                        {
-                            <li>@file.Name</li>
-                        }
-                    }
-                </ul>
+<EditForm Model="@requestModel">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <body>
+        <container>
+            <div class="form-group">
+                <label for="typeOfRequest">Type of Request:</label>
+                <InputSelect id="typeOfRequest" class="form-control" @bind-Value="requestModel.TypeOfRequest">
+                    <option value="">Select a type</option>
+                    <option value="Info">Request for information</option>
+                    <option value="Desc">Document Review</option>
+                </InputSelect>
             </div>
-                <button type="button" class="btn" @onclick="Btn">Submit</button>
+
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <InputDate id="startDate" class="form-control" @bind-Value="requestModel.StartDate" />
             </div>
-    </EditForm>
-</body>
-    
+
+            <div class="form-group">
+                <label for="dueDate">Due Date:</label>
+                <InputDate id="dueDate" class="form-control" @bind-Value="requestModel.DueDate" />
+            </div>
+
+            <div class="form-group">
+                <label for="priorityLevel">Priority Level:</label>
+                <InputSelect id="priorityLevel" class="form-control" @bind-Value="requestModel.PriorityLevel">
+                    <option value="">Select priority</option>
+                    <option>Low</option>
+                    <option>Med</option>
+                    <option>High</option>
+                    <!-- Simplified: Static options can be added here -->
+                </InputSelect>
+            </div>
+
+            <div class="form-group">
+                <label for="priorityLevel">Package Number</label>
+                <InputSelect id="priorityLevel" class="form-control" @bind-Value="requestModel.PackageNumber"></InputSelect>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <InputTextArea id="description" class="form-control" @bind-Value="requestModel.Description" />
+            </div>
+
+            <div class="form-group">
+                <label for="fileAttachment">File Attachments:</label>
+                <InputFile id="fileAttachment" class="form-control" multiple @bind-Value="requestModel.FileAttachments" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </container>
+    </body>
+
+
+
+
+
+</EditForm>
 
 @code {
-    private void HandleFileUpload(InputFileChangeEventArgs e)
+    private RequestModel requestModel = new RequestModel();
+
+    public class RequestModel
     {
-        const long maxFileSize = 2L * 1024 * 1024 * 1024; // 2 GB in bytes
-        long totalSize = 0;
+        public string TypeOfRequest { get; set; }
+        public DateTime StartDate { get; set; } = DateTime.Now;
+        public DateTime? DueDate { get; set; }
+        public string PriorityLevel { get; set; }
+        public string PackageNumber { get; set; }
+        public string Description { get; set; }
+        public IBrowserFile FileAttachment { get; set; }
+        public IEnumerable<IBrowserFile> FileAttachments { get; set; }
 
-        foreach (var file in e.GetMultipleFiles())
-        {
-            totalSize += file.Size;
-            if (totalSize > maxFileSize)
-            {
-                // Handle the case where total file size exceeds 2 GB
-                // You can show an error message to the user
-                return;
-            }
-
-            selectedFiles.Clear(); // Clear the current file list
-            selectedFiles.AddRange(e.GetMultipleFiles());
-
-            // Process each file here
-        }
-
-        // Continue with the upload logic if the size is within the limit
     }
-
-    private List<IBrowserFile> selectedFiles = new List<IBrowserFile>();
 }

@@ -4230,11 +4230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\tinawebapp.csproj",
+      "projectUniqueName": "C:\\DMIT-2590\\tinarepo\\tinawebapp\\tinawebapp\\tinawebapp.csproj",
       "projectName": "tinawebapp",
-      "projectPath": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\tinawebapp.csproj",
+      "projectPath": "C:\\DMIT-2590\\tinarepo\\tinawebapp\\tinawebapp\\tinawebapp.csproj",
       "packagesPath": "C:\\Users\\asingh280\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asingh280\\Desktop\\tinarepo\\tinawebapp\\tinawebapp\\obj\\",
+      "outputPath": "C:\\DMIT-2590\\tinarepo\\tinawebapp\\tinawebapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

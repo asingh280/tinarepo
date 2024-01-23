@@ -1,109 +1,52 @@
 body[b-4nn6m64ww4] {
-    background-image: url('/Images/office.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #f4f4f4;
-    background-attachment: fixed;
+    background-color: #9cc5c9;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.row[b-4nn6m64ww4] {
-    max-width: 750px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+h3[b-4nn6m64ww4] {
+    color: #000000;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.row:hover[b-4nn6m64ww4] {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+.form-group[b-4nn6m64ww4] {
+    margin-bottom: 20px;
 }
 
-.col-md-6[b-4nn6m64ww4] {
-    margin-bottom: 1rem;
-}
+    .form-group label[b-4nn6m64ww4] {
+        display: block;
+        color: #000000;
+        margin-bottom: 5px;
+    }
 
-label[b-4nn6m64ww4] {
-    display: block;
-    margin-bottom: .5rem;
-    font-weight: 600;
-    color: #333;
-}
-
-input[b-4nn6m64ww4], select[b-4nn6m64ww4], textarea[b-4nn6m64ww4] {
-    display: block;
+.form-control[b-4nn6m64ww4] {
     width: 100%;
-    padding: .5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-    input[type='file'][b-4nn6m64ww4] {
-        border: none;
-    }
-
-    input:focus[b-4nn6m64ww4], select:focus[b-4nn6m64ww4], textarea:focus[b-4nn6m64ww4] {
+    .form-control:focus[b-4nn6m64ww4] {
         outline: none;
-        border-color: #007bff;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        border-color: #7289da;
+        box-shadow: 0 0 5px #7289da;
     }
 
-    input:hover[b-4nn6m64ww4], select:hover[b-4nn6m64ww4], textarea:hover[b-4nn6m64ww4],
-    input:focus[b-4nn6m64ww4], select:focus[b-4nn6m64ww4], textarea:focus[b-4nn6m64ww4] {
-        border-color: #007bff;
-        background: #fff;
-    }
-
-button.btn[b-4nn6m64ww4] {
-    width: auto;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
+.btn-primary[b-4nn6m64ww4] {
+    background-color: #246181;
+    border: 1px solid #cccccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: whitesmoke;
     text-transform: uppercase;
-    margin-left:0.7rem;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
 
-    button.btn:hover[b-4nn6m64ww4] {
-        background-color: #0056b3;
+    .btn-primary:hover[b-4nn6m64ww4] {
+        background-color: #e8e8e8;
     }
-
-@media only screen and (max-width: 767px) {
-    .col-md-6[b-4nn6m64ww4] {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .row[b-4nn6m64ww4] {
-        padding: 20px 15px;
-    }
-}
-
-/* Add a hover effect to the entire row for interactive feedback */
-.row:hover[b-4nn6m64ww4] {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Make the form elements transition smoothly */
-input[b-4nn6m64ww4], select[b-4nn6m64ww4], textarea[b-4nn6m64ww4] {
-    display: block;
-    width: 100%;
-    padding: .5rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-/* Style the placeholder text */
-[b-4nn6m64ww4]::placeholder {
-    color: #aaa;
-    opacity: 1;
-}

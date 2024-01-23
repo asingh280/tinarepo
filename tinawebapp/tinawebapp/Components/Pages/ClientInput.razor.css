@@ -1,109 +1,52 @@
 ﻿body {
-    background-image: url('/Images/office.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #f4f4f4;
-    background-attachment: fixed;
+    background-color: #9cc5c9;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.row {
-    max-width: 750px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+h3 {
+    color: #000000;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.row:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+.form-group {
+    margin-bottom: 20px;
 }
 
-.col-md-6 {
-    margin-bottom: 1rem;
-}
+    .form-group label {
+        display: block;
+        color: #000000;
+        margin-bottom: 5px;
+    }
 
-label {
-    display: block;
-    margin-bottom: .5rem;
-    font-weight: 600;
-    color: #333;
-}
-
-input, select, textarea {
-    display: block;
+.form-control {
     width: 100%;
-    padding: .5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-    input[type='file'] {
-        border: none;
-    }
-
-    input:focus, select:focus, textarea:focus {
+    .form-control:focus {
         outline: none;
-        border-color: #007bff;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        border-color: #7289da;
+        box-shadow: 0 0 5px #7289da;
     }
 
-    input:hover, select:hover, textarea:hover,
-    input:focus, select:focus, textarea:focus {
-        border-color: #007bff;
-        background: #fff;
-    }
-
-button.btn {
-    width: auto;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
+.btn-primary {
+    background-color: #246181;
+    border: 1px solid #cccccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: whitesmoke;
     text-transform: uppercase;
-    margin-left:0.7rem;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
 
-    button.btn:hover {
-        background-color: #0056b3;
+    .btn-primary:hover {
+        background-color: #e8e8e8;
     }
-
-@media only screen and (max-width: 767px) {
-    .col-md-6 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-
-    .row {
-        padding: 20px 15px;
-    }
-}
-
-/* Add a hover effect to the entire row for interactive feedback */
-.row:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Make the form elements transition smoothly */
-input, select, textarea {
-    display: block;
-    width: 100%;
-    padding: .5rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-/* Style the placeholder text */
-::placeholder {
-    color: #aaa;
-    opacity: 1;
-}
