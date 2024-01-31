@@ -1,77 +1,77 @@
 ﻿@page "/client"
+@using Microsoft.AspNetCore.Components.Forms;
+@using Radzen;
+@using Radzen.Blazor;
 
 <EditForm Model="@requestModel">
     <DataAnnotationsValidator />
     <ValidationSummary />
-    <body>
+    <body class="body">
         <container class="container">
+
             <h3>Client Input</h3>
-            <div class="form-group">
-                <label for="typeOfRequest">Type of Request:</label>
-                <InputSelect id="typeOfRequest" class="form-control" @bind-Value="requestModel.TypeOfRequest">
-                    <option value="">Select a type</option>
-                    <option value="Info">Request for information</option>
-                    <option value="Desc">Document Review</option>
-                </InputSelect>
-            </div>
+            <div class="form-container">
+                <div class="container-left">
+                    <div class="form-group">
+                        <label for="typeOfRequest">Type of Request:</label>
+                        <InputSelect id="typeOfRequest" class="form-control" @bind-Value="requestModel.TypeOfRequest">
+                            <option value="">Select a type</option>
+                            <option value="Info">Request for information</option>
+                            <option value="Desc">Document Review</option>
+                        </InputSelect>
+                    </div>
 
-            <div class="date-fields">
-                <div class="form-group date-field">
-                    <label for="startDate">Start Date:</label>
-                    <InputDate id="startDate" class="form-control" @bind-Value="requestModel.StartDate" />
+                    <div class="date-fields">
+                        <div class="form-group date-field">
+                            <label for="startDate">Start Date:</label>
+                            <InputDate id="startDate" class="form-control" @bind-Value="requestModel.StartDate" />
+                        </div>
+
+                        <div class="form-group date-field">
+                            <label for="dueDate">Due Date:</label>
+                            <InputDate id="dueDate" class="form-control" @bind-Value="requestModel.DueDate" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="priorityLevel">Priority Level:</label>
+                        <InputSelect id="priorityLevel" class="form-control" @bind-Value="requestModel.PriorityLevel">
+                            <option value="">Select priority</option>
+                            <option>Low</option>
+                            <option>Med</option>
+                            <option>High</option>
+                        </InputSelect>
+                    </div>
                 </div>
 
-                <div class="form-group date-field">
-                    <label for="dueDate">Due Date:</label>
-                    <InputDate id="dueDate" class="form-control" @bind-Value="requestModel.DueDate" />
+                <div class="container-right">
+
+                    <div class="form-group">
+                        <label for="packageNumber">Package Number:</label>
+                        <InputText id="packageNumber" class="form-control" @bind-Value="requestModel.PackageNumber" />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="desc">
+                        <label for="description">Description:</label>
+                        <InputTextArea id="description" class="form-control" @bind-Value="requestModel.Description" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fileAttachment">File Attachments:</label>
+                        <InputFile id="fileAttachment" class="form-control" multiple @bind-Value="requestModel.FileAttachments" />
+                    </div>
                 </div>
             </div>
-
-            <div class="form-group">
-                <label for="priorityLevel">Priority Level:</label>
-                <InputSelect id="priorityLevel" class="form-control" @bind-Value="requestModel.PriorityLevel">
-                    <option value="">Select priority</option>
-                    <option>Low</option>
-                    <option>Med</option>
-                    <option>High</option>
-                </InputSelect>
+            <div class="button-container">
+                <RadzenButton type="submit" class="btn btn-primary">Previous Packages</RadzenButton>
+                <RadzenButton Click="GoToClientInput" class="btn btn-primary">Submit </RadzenButton>
+           
             </div>
-
-            <div class="form-group">
-                <label for="packageNumber">Package Number:</label>
-                <InputText id="packageNumber" class="form-control" @bind-Value="requestModel.PackageNumber" />
-            </div>
-
-            <div class="form-group">
-                <label for="description">Description:</label>
-                <InputTextArea id="description" class="form-control" @bind-Value="requestModel.Description" />
-            </div>
-
-            <div class="form-group">
-                <label for="fileAttachment">File Attachments:</label>
-                 <InputFile id="fileAttachment" class="form-control" multiple @bind-Value="requestModel.FileAttachments" />
-            </div>
-            <button type="submit" class="btn btn-primary">Submit </button>
-            <button type="submit" class="btn btn-primary">Previous Packages</button>
         </container>
+
     </body>
 
 
 </EditForm>
-
-@code {
-    private RequestModel requestModel = new RequestModel();
-
-    public class RequestModel
-    {
-        public string TypeOfRequest { get; set; }
-        public DateTime StartDate { get; set; } = DateTime.Now;
-        public DateTime? DueDate { get; set; }
-        public string PriorityLevel { get; set; }
-        public string Description { get; set; }
-        public string PackageNumber { get; set; }
-        public IBrowserFile FileAttachment { get; set; }
-        public IEnumerable<IBrowserFile> FileAttachments { get; set; }
-
-    }
-   }

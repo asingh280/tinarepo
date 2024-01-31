@@ -415,3 +415,5 @@ C:\DMIT-2590\tinarepo\tinawebapp\tinawebapp\obj\Debug\net8.0\refint\tinawebapp.d
 C:\DMIT-2590\tinarepo\tinawebapp\tinawebapp\obj\Debug\net8.0\tinawebapp.pdb
 C:\DMIT-2590\tinarepo\tinawebapp\tinawebapp\obj\Debug\net8.0\tinawebapp.genruntimeconfig.cache
 C:\DMIT-2590\tinarepo\tinawebapp\tinawebapp\obj\Debug\net8.0\ref\tinawebapp.dll
+C:\DMIT-2590\tinarepo\tinawebapp\tinawebapp\bin\Debug\net8.0\Radzen.Blazor.dll
+C:\DMIT-2590\tinarepo\tinawebapp\tinawebapp\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
