@@ -1,0 +1,132 @@
+﻿@page "/"
+
+<h3>WPS Review Form</h3>
+
+<EditForm Model="@wpsModel">
+    <div>
+        <label>WPS No:</label>
+        <InputText @bind-Value="wpsModel.WpsNo" />
+    </div>
+
+    <div>
+        <label>All supporting PQR listed on the WPS are attached:</label>
+        <InputCheckbox @bind-Value="wpsModel.PqrAttached" />
+    </div>
+
+    <div>
+        <label>Welding process:</label>
+        <InputSelect @bind-Value="wpsModel.WeldingProcess">
+            <option value="">Select...</option>
+            <option value="FCAW">Flux Core Arc Welding</option>
+            <option value="SMAW">Shielded Metal Arc Welding</option>
+            <option value="GTAW">Gas Tungsten Arc Welding</option>
+            <option value="GMAW">Gas Metal Arc Welding</option>
+        </InputSelect>
+    </div>
+
+    <div>
+        <label>Backing:</label>
+        <InputCheckbox @bind-Value="wpsModel.Backing" />
+    </div>
+
+    <div>
+        <label>Type of backing:</label>
+        <InputSelect @bind-Value="wpsModel.TypeOfBacking">
+            <option value="">Select...</option>
+            <option value="WeldMetal">Weld metal</option>
+            <option value="Strip">Strip</option>
+            <option value="NonFusing">Non-fusing</option>
+            <option value="Fusing">Fusing</option>
+            <!-- Implement additional logic for "Other" option -->
+        </InputSelect>
+    </div>
+
+    <!-- Base Metal -->
+    <div>
+        <label>Base metal PNumber:</label>
+        <InputText @bind-Value="wpsModel.BaseMetalPNumberStart" placeholder="Start PNumber" />
+        <InputText @bind-Value="wpsModel.BaseMetalPNumberEnd" placeholder="End PNumber" />
+        <label>Group:</label>
+        <InputText @bind-Value="wpsModel.BaseMetalGroupStart" placeholder="Start Group" />
+        <InputText @bind-Value="wpsModel.BaseMetalGroupEnd" placeholder="End Group" />
+    </div>
+
+    <div>
+        <label>UNS Number or Material:</label>
+        <InputText @bind-Value="wpsModel.UnsNumberOrMaterial" />
+    </div>
+
+    <!-- Chemical Analysis -->
+    <div>
+        <label>Any chemical analysis stated:</label>
+        <InputCheckbox @bind-Value="wpsModel.ChemicalAnalysisStated" />
+    </div>
+
+    <!-- Thickness Range -->
+    <div>
+        <label>Thickness range maximum:</label>
+        <InputText @bind-Value="wpsModel.ThicknessRangeMaximum" />
+    </div>
+
+    <div>
+        <label>Is the max pass thickness greater than 13mm?</label>
+        <InputCheckbox @bind-Value="wpsModel.MaxPassThicknessGreaterThan13mm" />
+    </div>
+
+    <!-- Filler -->
+    <div>
+        <label>SFA correct?</label>
+        <InputRadioGroup @bind-Value="wpsModel.SfaCorrect">
+            <InputRadio Value="true" /> Yes
+            <InputRadio Value="false" /> No
+        </InputRadioGroup>
+    </div>
+
+    <!-- More Filler Details -->
+    <!-- Add additional radio buttons and inputs for Filler Metal Information -->
+    <!-- Post Weld Heat Treatment -->
+    <div>
+        <label>Post Weld Heat Treatment Temperature Range Correct?</label>
+        <InputCheckbox @bind-Value="wpsModel.PwhtTemperatureCorrect" />
+    </div>
+
+
+    <!-- Additional Sections as per your specifications -->
+
+    <button type="submit">Submit Review</button>
+</EditForm>
+
+@code {
+    private WpsModel wpsModel = new();
+
+    public class WpsModel
+    {
+        public string WpsNo { get; set; }
+        public bool PqrAttached { get; set; }
+        public string WeldingProcess { get; set; }
+        public bool Backing { get; set; }
+        public string TypeOfBacking { get; set; }
+        // Base Metal
+        public string BaseMetalPNumberStart { get; set; }
+        public string BaseMetalPNumberEnd { get; set; }
+        public string BaseMetalGroupStart { get; set; }
+        public string BaseMetalGroupEnd { get; set; }
+        public string UnsNumberOrMaterial { get; set; }
+
+        // Chemical Analysis
+        public bool ChemicalAnalysisStated { get; set; }
+
+        // Thickness Range
+        public string ThicknessRangeMaximum { get; set; }
+        public bool MaxPassThicknessGreaterThan13mm { get; set; }
+
+        // Filler
+        public bool? SfaCorrect { get; set; }
+
+        // Post Weld Heat Treatment
+        public bool PwhtTemperatureCorrect { get; set; }
+
+
+       
+    }
+}

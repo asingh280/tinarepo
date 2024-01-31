@@ -68,14 +68,14 @@ namespace TinaKingWebApp.Pages.MainPages
 {
     public partial class ClientInput
     {
-        [Inject]
+          [Inject]
         private NavigationManager NavigationManager { get; set; }
 
         private List<IBrowserFile> selectedFiles = new List<IBrowserFile>();
         private RequestModel requestModel = new RequestModel();
 
         // Dummy data for dropdowns
-<<<<<<< HEAD
+
         /*  private List<dynamic> requestTypes = new List<dynamic>
           {
               new { Name = "Request for information", Value = "Info" },
@@ -88,20 +88,6 @@ namespace TinaKingWebApp.Pages.MainPages
               new { Name = "Med", Value = "Med" },
               new { Name = "High", Value = "High" }
           };*/
-=======
-      /*  private List<dynamic> requestTypes = new List<dynamic>
-        {
-            new { Name = "Request for information", Value = "Info" },
-            new { Name = "Document Review", Value = "Desc" }
-        };
-
-        private List<dynamic> priorityLevels = new List<dynamic>
-        {
-            new { Name = "Low", Value = "Low" },
-            new { Name = "Med", Value = "Med" },
-            new { Name = "High", Value = "High" }
-        };*/
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
 
         private void HandleFileUpload(InputFileChangeEventArgs e)
         {
@@ -127,14 +113,11 @@ namespace TinaKingWebApp.Pages.MainPages
 
         private void Btn()
         {
-<<<<<<< HEAD
-=======
             NavigationManager.NavigateTo("/client", forceLoad: true);
         }
     
         private void GoToClientInput()
         {
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
             NavigationManager.NavigateTo("/ClientRegistration");
         }
 

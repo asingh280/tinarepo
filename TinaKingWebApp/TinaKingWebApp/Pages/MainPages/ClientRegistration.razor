@@ -1,11 +1,11 @@
 ﻿@page "/ClientRegistration"
 @using Microsoft.AspNetCore.Components.Forms
-<<<<<<< HEAD
 @using TinaKingSystem.ViewModels
-=======
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+@using TinaKingWebApp.Pages
+
 
 <h3>Fetch Client Information</h3>
+  <EditForm>
 <div>
     <div>
         <label>Email:</label>
@@ -16,22 +16,18 @@
         <input type="password" @bind="password" />
     </div>
     <div>
-<<<<<<< HEAD
-        <button @* @onclick="FetchClientInfo" *@>Fetch Information</button>
+         <button type="submit">Fetch Client Info</button>
     </div>
-=======
-      <button>Fetch Information</button></div>
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
- </div>
+  </div>
+  </EditForm>
   
 @code {
-    private string email;
-    private string password;
+	private string email;
+	private string password;
+
 }
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+

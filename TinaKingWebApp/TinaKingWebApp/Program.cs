@@ -17,13 +17,11 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 var connectionStringTinaKing = builder.Configuration.GetConnectionString("WFS_2590");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-<<<<<<< HEAD
 options.UseSqlServer(connectionString));
 builder.Services.AddBackendDependencies(options => options.UseSqlServer(connectionStringTinaKing));
-=======
-    //options.UseSqlServer(connectionString));
-builder.Services.AddBackendDependencies(options => options.UseSqlServer(connectionStringTinaKing)));
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+
+//options.UseSqlServer(connectionString));
+builder.Services.AddBackendDependencies(options => options.UseSqlServer(connectionStringTinaKing));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

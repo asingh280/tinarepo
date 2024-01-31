@@ -1,15 +1,15 @@
 /* _content/TinaKingWebApp/Pages/MainPages/ClientInput.razor.rz.scp.css */
-<<<<<<< HEAD
+
 ﻿/*.body {
     background-color: #00162a;
     // background: url('../images/smallbg.png') no-repeat center center fixed;
 }*/
-=======
+
 ﻿.body[b-pt1p1i4r7i] {
     background-color: #00162a;
     // background: url('../images/smallbg.png') no-repeat center center fixed;
 }
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+
 
 .container[b-pt1p1i4r7i] {
     position: relative;
@@ -40,164 +40,23 @@
 }
 
 .button-container[b-pt1p1i4r7i] {
-<<<<<<< HEAD
+
     /*    position: absolute;
 */ right: 20px;
     padding-top: 20px;
     justify-items: center;
     display: flex;
     justify-content: space-between;
-=======
+
 /*    position: absolute;
 */    right: 20px;
     padding-top:20px;
     justify-items:center;
     display:flex;
    justify-content:space-between;
->>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+
 }
 
 .rz-button[b-pt1p1i4r7i] {
     margin-left: 10px;
 }
-/* _content/TinaKingWebApp/Pages/MainPages/LoginForm.razor.rz.scp.css */
-
-.login-background[b-fsrlcsken2] {
-    background: url('../images/smallbg.png') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-}
-
-.body[b-fsrlcsken2] {
-    display: flex;
-    justify-content: right;
-    margin-right: 80px;
-    align-items: center;
-    padding-top: 80px;
-}
-
-.login-btn[b-fsrlcsken2] {
-    background-color: #246181;
-    color: white;
-}
-
-@keyframes fadeIn-b-fsrlcsken2 {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.selected-image[b-fsrlcsken2] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: 150px;
-    animation: fadeIn-b-fsrlcsken2 1s ease-in-out;
-}
-
-.center-text[b-fsrlcsken2] {
-    text-align: center;
-    color: #00162a;
-    margin: 0;
-}
-
-.fgt-pwd[b-fsrlcsken2] {
-    color: #00162a;
-    text-decoration: none;
-}
-
-hr[b-fsrlcsken2] {
-    color: #00162a;
-}
-
-.login-container[b-fsrlcsken2] {
-    background-color: #9cc5c9;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: auto;
-    align-items: center;
-}
-
-.account-type-selection[b-fsrlcsken2] {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.account-type button[b-fsrlcsken2] {
-    border: none;
-    background: none;
-    padding: 0;
-}
-
-.choose-account-type[b-fsrlcsken2] {
-    text-align: center;
-}
-
-.account-image[b-fsrlcsken2] {
-    display: inline-block;
-    margin: 10px;
-    cursor: pointer;
-}
-
-/*.account-image img {
-    width: 100px;*/ /* Set appropriate width */
-/*height: auto;
-}
-
-.account-image-selected {
-    display: block;
-    margin: auto;
-}
-
-.account-image-selected img {
-    width: 150px;*/ /* Larger size for selected */
-/*height: auto;
-}*/
-
-/*
-.account-type button.selected-img {
-    border: 2px solid green;
-}
-*/
-
-.login-form .form-group[b-fsrlcsken2] {
-    margin-bottom: 15px;
-}
-
-.login-form .btn-secondary[b-fsrlcsken2] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-/* Add additional styles as needed to match your specific design */
-.choose-account-type[b-fsrlcsken2] {
-    text-align: center;
-}
-
-.account-image[b-fsrlcsken2] {
-    display: inline-block;
-    margin: 10px;
-    cursor: pointer;
-}
-
-    .account-image img[b-fsrlcsken2] {
-        width: 100px; /* Set appropriate width */
-        height: auto;
-    }
-
-.account-image-selected[b-fsrlcsken2] {
-    display: block;
-    margin: auto;
-}
-
-    .account-image-selected img[b-fsrlcsken2] {
-        width: 150px; /* Larger size for selected */
-        height: auto;
-    }

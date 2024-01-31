@@ -17,12 +17,12 @@ namespace TinaKingSystem
 
             services.AddDbContext<WFS_2590Context>(options);
 
-            services.AddTransient<AuthenticationService>((ServiceProvider) =>
+         /*   services.AddTransient<AuthenticationService>((ServiceProvider) =>
             {
                 var context = ServiceProvider.GetService<WFS_2590Context>();
                 return new AuthenticationService(context);
             });
-            services.AddScoped<AuthenticationService>();
+            services.AddScoped<AuthenticationService>();*/
 
         }
 

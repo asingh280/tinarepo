@@ -24,3 +24,16 @@ C:\Users\asingh280\Desktop\copytinaking\TinaKingWebApp\TinaKingWebAppSystem\obj\
 C:\Users\asingh280\Desktop\copytinaking\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\refint\TinaKingSystem.dll
 C:\Users\asingh280\Desktop\copytinaking\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.pdb
 C:\Users\asingh280\Desktop\copytinaking\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\ref\TinaKingSystem.dll
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.csproj.AssemblyReference.cache
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.AssemblyInfoInputs.cache
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.AssemblyInfo.cs
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.csproj.CoreCompileInputs.cache
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.sourcelink.json
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.dll
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\refint\TinaKingSystem.dll
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\TinaKingSystem.pdb
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\bin\Debug\net7.0\TinaKingSystem.deps.json
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\bin\Debug\net7.0\TinaKingSystem.dll
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\bin\Debug\net7.0\TinaKingSystem.pdb
+C:\DMIT-2590\tinarepo\TinaKingWebApp\TinaKingWebAppSystem\obj\Debug\net7.0\ref\TinaKingSystem.dll
