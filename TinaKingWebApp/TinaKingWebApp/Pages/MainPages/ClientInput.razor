@@ -1,0 +1,152 @@
+﻿@page "/ClientInput"
+@using Microsoft.AspNetCore.Components.Forms;
+@using Radzen;
+@using Radzen.Blazor;
+
+<EditForm Model="@requestModel">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <body class="body">
+        <container class="container">
+
+            <h3>Client Input</h3>
+            <div class="form-container">
+                <div class="container-left">
+                    <div class="form-group">
+                        <label for="typeOfRequest">Type of Request:</label>
+                        <InputSelect id="typeOfRequest" class="form-control" @bind-Value="requestModel.TypeOfRequest">
+                            <option value="">Select a type</option>
+                            <option value="Info">Request for information</option>
+                            <option value="Desc">Document Review</option>
+                        </InputSelect>
+                    </div>
+
+                    <div class="date-fields">
+                        <div class="form-group date-field">
+                            <label for="startDate">Start Date:</label>
+                            <InputDate id="startDate" class="form-control" @bind-Value="requestModel.StartDate" />
+                        </div>
+
+                        <div class="form-group date-field">
+                            <label for="dueDate">Due Date:</label>
+                            <InputDate id="dueDate" class="form-control" @bind-Value="requestModel.DueDate" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="priorityLevel">Priority Level:</label>
+                        <InputSelect id="priorityLevel" class="form-control" @bind-Value="requestModel.PriorityLevel">
+                            <option value="">Select priority</option>
+                            <option>Low</option>
+                            <option>Med</option>
+                            <option>High</option>
+                        </InputSelect>
+                    </div>
+                </div>
+
+                <div class="container-right">
+
+                    <div class="form-group">
+                        <label for="packageNumber">Package Number:</label>
+                        <InputText id="packageNumber" class="form-control" @bind-Value="requestModel.PackageNumber" />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="desc">
+<<<<<<< HEAD
+                            <label for="description">Description:</label>
+                            <InputTextArea id="description" class="form-control" @bind-Value="requestModel.Description" />
+=======
+                        <label for="description">Description:</label>
+                        <InputTextArea id="description" class="form-control" @bind-Value="requestModel.Description" />
+>>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fileAttachment">File Attachments:</label>
+                        <InputFile id="fileAttachment" class="form-control" multiple @bind-Value="requestModel.FileAttachments" />
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <RadzenButton type="submit" class="btn btn-primary">Previous Packages</RadzenButton>
+<<<<<<< HEAD
+                <RadzenButton Click="Btn" class="btn btn-primary">Submit </RadzenButton>
+=======
+                <RadzenButton Click="GoToClientInput" class="btn btn-primary">Submit </RadzenButton>
+           
+>>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+            </div>
+        </container>
+
+    </body>
+
+
+<<<<<<< HEAD
+</EditForm>
+=======
+</EditForm>
+
+
+
+@*
+<EditForm Model="@requestModel">
+    <RadzenTemplateForm>
+        <div class="form-container">
+            <h3>Client Input</h3>
+
+            <RadzenCard>
+                <RadzenFieldSet Text="Request Details">
+                    <div class="form-group">
+                        <RadzenLabel for="typeOfRequest" Text="Type of Request:" />
+                        <RadzenDropDown Data=@new[] { "Info", "Desc" } TValue="string" Style="width:100%" @bind-Value="requestModel.TypeOfRequest" />
+                    </div>
+
+                    <div class="date-fields">
+                        <div class="form-group">
+                            <RadzenLabel for="startDate" Text="Start Date:" />
+                            <RadzenDatePicker @bind-Value="requestModel.StartDate" />
+                        </div>
+
+                        <div class="form-group">
+                            <RadzenLabel for="dueDate" Text="Due Date:" />
+                            <RadzenDatePicker @bind-Value="requestModel.DueDate" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <RadzenLabel for="priorityLevel" Text="Priority Level:" />
+<RadzenDropDown Data=@new[] { "Low", "Med", "High" } TValue="string" Style="width:100%" @bind-Value="requestModel.PriorityLevel" />
+                    </div>
+                </RadzenFieldSet>
+            </RadzenCard>
+
+            <RadzenCard>
+                <RadzenFieldSet Text="Additional Information">
+                    <div class="form-group">
+                        <RadzenLabel for="packageNumber" Text="Package Number:" />
+                        <RadzenTextBox @bind-Value="requestModel.PackageNumber" />
+                    </div>
+
+                    <div class="form-group">
+                        <RadzenLabel for="description" Text="Description:" />
+                        <RadzenTextArea @bind-Value="requestModel.Description" Style="width:100%" />
+                    </div>
+
+                    <div class="form-group">
+                        <RadzenLabel for="fileAttachment" Text="File Attachments:" />
+                        <RadzenFileInput Multiple="true" @bind-Value="requestModel.FileAttachments" />
+                    </div>
+                </RadzenFieldSet>
+            </RadzenCard>
+        </div>
+
+        <div class="button-container">
+            <RadzenButton Text="Previous Packages" ButtonStyle="ButtonStyle.Primary" />
+            <RadzenButton Text="Submit" ButtonStyle="ButtonStyle.Primary" Type="submit" />
+        </div>
+    </RadzenTemplateForm>
+</EditForm>
+ *@
+>>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01

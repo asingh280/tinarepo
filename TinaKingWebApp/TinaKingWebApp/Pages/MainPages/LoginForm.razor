@@ -1,0 +1,78 @@
+﻿@page "/"
+
+<div class="login-background">
+    <div class="body">
+        <div class="col-md-4">
+            <RadzenButton @onclick="GoToClientInput">Client</RadzenButton>
+            <section class="login-container">
+<<<<<<< HEAD
+                 <StatusMessage Message="@errorMessage" /> 
+                <EditForm Model="Input" FormName="LoginForm">
+                    <DataAnnotationsValidator /> 
+                    <div>
+                    <h2 class="center-text">Choose Account Type</h2>
+                    <hr />
+           @*          <div class="account-type-selection">
+                        <div class="account-type doctor" style='@(selectedRole == "doctor" ? "display:none;" : "")'>
+                            <button    @onclick="() => SelectRole('doctor')"  >
+                                <img src="./images/Client-final.png" alt="Client" class="large-image" style="width: 150px; height: 150px;" />
+                            </button>
+                        </div>
+                        <div class="account-type patient" style='@(selectedRole == "patient" ? "display:none;" : "")'>
+                            <button   @onclick="() => SelectRole('patient')"  >
+                                <img src="./images/Employee-final.png" alt="Employee" class="large-image" style="width: 150px; height: 150px;" />
+                            </button>
+                        </div>
+                    </div> *@
+=======
+                <StatusMessage Message="@errorMessage" />
+                <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+                    <DataAnnotationsValidator />
+                   @*  <div>
+                        <h2 class="center-text">Choose Account Type</h2>
+                        <hr />
+                        <div class="account-type-selection">
+                            <div class="account-type doctor" style='@(selectedRole == "doctor" ? "display:none;" : "")'>
+                                <button @onclick="() => SelectRole()" doctor\")">
+                                    <img src="./images/Client-final.png" alt="Client" class="large-image" style="width: 150px; height: 150px;" />
+                                </button>
+                            </div>
+                            <div class="account-type patient" style='@(selectedRole == "patient" ? "display:none;" : "")'>
+                                <button @onclick="() => SelectRole()" patient\")">
+                                    <img src="./images/Employee-final.png" alt="Employee" class="large-image" style="width: 150px; height: 150px;" />
+                                </button>
+                            </div>
+                        </div>
+>>>>>>> bba3c92af4bd29fcb204c691b5cd02c1e3d93e01
+
+
+                        @if (!string.IsNullOrWhiteSpace(selectedRole))
+                        {
+                            <div class="selected-role">
+                                <img src="@(selectedRole == "doctor" ? "./images/Client-final.png" : "./images/Employee-final.png")" alt="@(selectedRole == "doctor" ? "Client" : "Employee")" class="selected-image" />
+                            </div>
+                        }
+                    </div> *@
+                    <ValidationSummary class="text-danger" role="alert" />
+
+                    <!-- Email Input -->
+                    <div class="form-floating mb-3">
+                        <InputText @bind-Value="loginModel.Email" id="email" class="form-control" autocomplete="email" aria-required="true" placeholder="name@example.com" />
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="form-floating mb-3">
+                        <InputText @bind-Value="loginModel.Password" type="password" id="password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                        <label for="password" class="form-label">Password</label>
+                    </div>
+
+                    <!-- Login Button -->
+                    <div>
+                        <button type="submit" class="login-btn w-100 btn btn-lg">Log in</button>
+                    </div>
+                </EditForm>
+            </section>
+        </div>
+    </div>
+</div>
