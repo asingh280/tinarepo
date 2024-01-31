@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\tinawebapp\tinawebapp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DAL\" />
+    <Folder Include="BLL\" />
+    <Folder Include="Entities\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+</Project>
