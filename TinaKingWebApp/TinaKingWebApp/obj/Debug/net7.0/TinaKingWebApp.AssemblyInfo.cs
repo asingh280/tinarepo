@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TinaKingWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ba0175267293603ab9a9ad9eb19fa3a3f01e0ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdd31d29149c3aeda2109f76b9a6744e6cc8aed5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TinaKingWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TinaKingWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
